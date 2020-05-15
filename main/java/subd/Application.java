@@ -51,8 +51,9 @@ public class Application {
     public void onStart() {
 
         //System.out.println(productRepository.getAllByNominationEquals("Мебель"));
-        //System.out.println(werehouseRepository.getAllByDateBetween(new Date(1526101829L) ,new Date(System.currentTimeMillis())));
-        readWorkers();
+        Date date = new Date(System.currentTimeMillis()-2592000000L);
+        System.out.println(werehouseRepository.getAllByDateBetween(date));
+        //readWorkers();
         //readClients();
         //readOrders();
         //readProducts();
@@ -77,8 +78,9 @@ public class Application {
                 .forEach(System.out::println);
     }
 
-    private void updateWorkers() {
+    private void updateWorkers(Integer id , String post, Integer experience,String name , String surname ,String patronymic) {
         Worker worker = new Worker();
+        worker.Constructor(id,post,experience,name,surname,patronymic);
         workerRepository.save(worker);
     }
 
