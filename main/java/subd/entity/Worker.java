@@ -20,6 +20,17 @@ public class Worker {
 
     private String patronymic;
 
+    public Worker() {
+
+    }
+    public void Constructor(Integer id, String post, Integer experience, String name, String surname, String patronymic){
+        this.post = post;
+        this.experience = experience;
+        this.name = name;
+        this.surname = surname;
+        this.patronymic = patronymic;
+    }
+
     @OneToMany
     private List<Werehouse> werehouses;
 

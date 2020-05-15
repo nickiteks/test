@@ -50,17 +50,21 @@ public class Application {
     @EventListener(ApplicationReadyEvent.class)
     public void onStart() {
 
-        System.out.println(productRepository.getAllByNominationEquals("Мебель"));
-        System.out.println(werehouseRepository.getAllByDateBetween(new Date(1526101829L) ,new Date(System.currentTimeMillis())));
+        //System.out.println(productRepository.getAllByNominationEquals("Мебель"));
+        //System.out.println(werehouseRepository.getAllByDateBetween(new Date(1526101829L) ,new Date(System.currentTimeMillis())));
         readWorkers();
-        readClients();
+        //readClients();
+        //readOrders();
+        //readProducts();
+        //readProviders();
+        //readWherehouses();
+        //createWorker(null,"Рабочий",2,"Константин","Андреев","Викторович");
     }
 
-    private void createWorker(int id , String post, Integer experience,String name , String surname ,String patronymic) {
+    private void createWorker(Integer id , String post, Integer experience,String name , String surname ,String patronymic) {
         Worker worker = new Worker();
-
+        worker.Constructor(id,post,experience,name,surname,patronymic);
         workerRepository.save(worker);
-
     }
 
     private void delWorker(){
@@ -68,7 +72,7 @@ public class Application {
     }
 
     private  void readWorkers() {
-        workerRepository.findAll(PageRequest.of(0, 3, Sort.Direction.DESC, "name"))
+        workerRepository.findAll(PageRequest.of(0, 4, Sort.Direction.DESC, "name"))
                 .toList()
                 .forEach(System.out::println);
     }
@@ -85,13 +89,13 @@ public class Application {
     }
 
     private  void readOrders() {
-        ordersRepository.findAll(PageRequest.of(0, 3, Sort.Direction.DESC, "surname"))
+        ordersRepository.findAll(PageRequest.of(0, 3, Sort.Direction.DESC, "nomination"))
                 .toList()
                 .forEach(System.out::println);
     }
 
     private  void readProducts() {
-        productRepository.findAll(PageRequest.of(0, 3, Sort.Direction.DESC, "surname"))
+        productRepository.findAll(PageRequest.of(0, 3, Sort.Direction.DESC, "nomination"))
                 .toList()
                 .forEach(System.out::println);
     }
@@ -103,7 +107,7 @@ public class Application {
     }
 
     private  void readWherehouses() {
-        werehouseRepository.findAll(PageRequest.of(0, 3, Sort.Direction.DESC, "surname"))
+        werehouseRepository.findAll(PageRequest.of(0, 3, Sort.Direction.DESC, "date"))
                 .toList()
                 .forEach(System.out::println);
     }
