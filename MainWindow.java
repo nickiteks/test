@@ -208,7 +208,7 @@ public class MainWindow {
 				panel.setBounds(270, 11, 544, 518);
 				frame.getContentPane().add(panel);
 				fileManager= new fileManager(PhysMemory);
-				PhysMemory.setStartSelectedFile(fileManager.getRootFile().getStartInMem());
+				PhysMemory.setStartSelectedFile(fileManager.getRootFile());
 				panel.repaint();
 				startUpdateTree(fileManager.getRootFile().getChilds());
 			}
@@ -242,7 +242,7 @@ public class MainWindow {
 		tree.addTreeSelectionListener(new TreeSelectionListener() {
 			public void valueChanged(TreeSelectionEvent e) {
 				fileManager.setSelectedNodeTree((DefaultMutableTreeNode) tree.getSelectionPath().getLastPathComponent());
-				PhysMemory.setStartSelectedFile(fileManager.getSelected().getStartInMem());
+				PhysMemory.setStartSelectedFile(fileManager.getSelected());
 				panel.repaint();
 				System.out.println(fileManager.getSelected());
 			}

@@ -8,7 +8,6 @@ public class WorkPhysMemory {
 	private Cell[] place;
 	private Cell startSelectedFile;
 	private Cell endCell = new Cell(-1);
-	private ArrayList<CellTable> tableOfFileSystem = new ArrayList<CellTable>();
 	
 	public WorkPhysMemory(int sizeDisc,int sizeSector) {
 		
@@ -23,36 +22,27 @@ public class WorkPhysMemory {
 	
 
 	public void allocateMemoryForFile(File file) {
-		tableOfFileSystem.add(new CellTable(file,file.getStartInMem()));
 		int size = file.getSize();
 		int countSectors=size/sizeSector;
-		Cell prevSector = null;
+		Knot newKnot = new Knot();
 		if(size%sizeSector>0)
 			countSectors++;
 		for (int i = 0; i < place.length; i++) {
-			if(place[i].getCell()==null && file.getStartInMem() == null) {
-				place[i].setCell(endCell);
+			if(place[i].getStatus()==0) {
+				newKnot.addCell(place[i]);
 				place[i].setStatus(1);
-				prevSector = place[i];	
-				countSectors--;
-				file.setStartInMem(place[i]);
-			} else if (place[i].getCell() == null) {
-				place[i].setCell(endCell);
-				place[i].setStatus(1);
-				prevSector.setCell(place[i]);
-				prevSector = place[i];				
 				countSectors--;
 			}
-			if (countSectors==0)
+			if(countSectors==0)
 				break;
-		}	
+		}				
+		file.setKnot(newKnot);	
 	}
 	
 	public void clearMemory(File file) {
-		for (int i = 0; i < place.length; i++) {
-			if(place[i].getStatus()==2) {
-				place[i] = new Cell(sizeSector);
-			}
+		Knot knot = file.getKnot();
+		for (Cell cell : knot.getCells()) {
+			cell.setStatus(0);
 		}
 		if(file.getFolder()) {
 			clearFolder(file.getChilds());
@@ -64,32 +54,28 @@ public class WorkPhysMemory {
 			if(file.getFolder()) {
 				clearFolder(file.getChilds());
 			}
-			clearFile(file.getStartInMem());
+			clearFile(file.getKnot());
 		}
 	}
 
 
-	private void clearFile(Cell cell) {
-		if(cell!=endCell) {
-			clearFile(cell.getCell());
-		}
-		cell.setStatus(0);
+	private void clearFile(Knot knot) {
+		for (Cell cell : knot.getCells()) {
+			cell.setStatus(0);
+		}		
 	}
 
 
-	public void setStartSelectedFile(Cell startSelectedFile) {
-		this.startSelectedFile = startSelectedFile;
+	public void setStartSelectedFile(File file) {
 		clearStatus();
-		setStatusSelect(startSelectedFile);
+		setStatusSelect(file.getKnot());
 	}
 
 
-	private void setStatusSelect(Cell cell) {
-		
-		if(cell.getCell().GetSize()!=-1) {
-			setStatusSelect(cell.getCell());		
-		}	
-		cell.setStatus(2);	
+	private void setStatusSelect(Knot knot) {
+		for (Cell cell : knot.getCells()) {
+			cell.setStatus(2);
+		}			
 	}
 
 
@@ -140,16 +126,6 @@ public class WorkPhysMemory {
 
 	public void setPlace(Cell[] place) {
 		this.place = place;
-	}
-
-
-	public ArrayList<CellTable> getTables() {
-		return tableOfFileSystem;
-	}
-
-
-	public void setTables(ArrayList<CellTable> tables) {
-		this.tableOfFileSystem = tables;
 	}
 	
 	public Cell getCell(int i) {

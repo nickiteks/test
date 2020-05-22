@@ -5,7 +5,7 @@ public class File implements Cloneable{
 	private File parrent;
 	private boolean folder;
 	private ArrayList<File> childs;
-	private Cell startInMem = null;
+	private Knot knot;
 	private int size = -1;
 	
 	public File(String name,File parrent,Boolean folder) {
@@ -81,19 +81,19 @@ public class File implements Cloneable{
 		this.childs = childs;
 	}
 
-	public Cell getStartInMem() {
-		return startInMem;
-	}
-
-	public void setStartInMem(Cell startInMem) {
-		this.startInMem = startInMem;
-	}
-
 	public int getSize() {
 		return size;
 	}
 
 	public void setSize(int size) {
 		this.size = size;
+	}
+
+	public Knot getKnot() {
+		return knot;
+	}
+
+	public void setKnot(Knot knot) {
+		this.knot = knot;
 	}
 }
