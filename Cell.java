@@ -1,0 +1,31 @@
+
+public class Cell {
+
+	private int size;
+	private Cell cell;
+	private int status=0;
+	// 0 - свобода 1 - занято 2 - выбранно
+	
+	public Cell(int size) {
+		this.size = size;
+		cell = null;
+	}
+	public void SetSize(int size) {
+		this.size =size;
+	}
+	public int GetSize() {
+		return size;
+	}
+	public Cell getCell() {
+		return cell;
+	}
+	public void setCell(Cell cell) {
+		this.cell = cell;
+	}
+	public int getStatus() {
+		return status;
+	}
+	public void setStatus(int status) {
+		this.status = status;
+	}
+}
