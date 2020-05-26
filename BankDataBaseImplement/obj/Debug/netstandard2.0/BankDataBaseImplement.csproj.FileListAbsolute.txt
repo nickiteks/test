@@ -1,0 +1,12 @@
+D:\проекты\BankBusinessLogic\BankDataBaseImplement\bin\Debug\netstandard2.0\BankDataBaseImplement.deps.json
+D:\проекты\BankBusinessLogic\BankDataBaseImplement\bin\Debug\netstandard2.0\BankDataBaseImplement.dll
+D:\проекты\BankBusinessLogic\BankDataBaseImplement\obj\Debug\netstandard2.0\BankDataBaseImplement.AssemblyInfoInputs.cache
+D:\проекты\BankBusinessLogic\BankDataBaseImplement\obj\Debug\netstandard2.0\BankDataBaseImplement.AssemblyInfo.cs
+D:\проекты\BankBusinessLogic\BankDataBaseImplement\obj\Debug\netstandard2.0\BankDataBaseImplement.csprojAssemblyReference.cache
+D:\проекты\BankBusinessLogic\BankDataBaseImplement\obj\Debug\netstandard2.0\BankDataBaseImplement.csproj.CoreCompileInputs.cache
+D:\проекты\BankBusinessLogic\BankDataBaseImplement\bin\Debug\netstandard2.0\BankBusinessLogic.dll
+D:\проекты\BankBusinessLogic\BankDataBaseImplement\bin\Debug\netstandard2.0\BankBusinessLogic.pdb
+D:\проекты\BankBusinessLogic\BankDataBaseImplement\obj\Debug\netstandard2.0\BankDataBaseImplement.csproj.CopyComplete
+D:\проекты\BankBusinessLogic\BankDataBaseImplement\bin\Debug\netstandard2.0\BankDataBaseImplement.pdb
+D:\проекты\BankBusinessLogic\BankDataBaseImplement\obj\Debug\netstandard2.0\BankDataBaseImplement.dll
+D:\проекты\BankBusinessLogic\BankDataBaseImplement\obj\Debug\netstandard2.0\BankDataBaseImplement.pdb
