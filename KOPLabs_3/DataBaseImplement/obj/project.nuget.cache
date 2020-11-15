@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "lNrwJrD2L5013CWJ5AiSt2EtaQ6SCg6gaGyg3c+zEUuASlayGZHnA44ub6YoXZt58/FerlhS69OZ8Ogn9BpoOw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\NULS\\source\\repos\\KOPLabs_3\\DataBaseImplement\\MainLogic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\NULS\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\NULS\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\NULS\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

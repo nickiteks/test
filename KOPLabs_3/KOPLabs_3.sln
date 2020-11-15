@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "View\View.csproj", "{BDD18982-D84D-41B6-A15B-AAFAD08EB9F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainLogic", "MainLogic\MainLogic.csproj", "{B71FC5DA-2D81-4879-B1C7-02CED5FD9364}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KDAkop", "..\..\Downloads\KDAkop-main\KDAkop\KDAkop.csproj", "{D09BD47C-0139-4F7B-9378-B46CB6CE261F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDD18982-D84D-41B6-A15B-AAFAD08EB9F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDD18982-D84D-41B6-A15B-AAFAD08EB9F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDD18982-D84D-41B6-A15B-AAFAD08EB9F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDD18982-D84D-41B6-A15B-AAFAD08EB9F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B71FC5DA-2D81-4879-B1C7-02CED5FD9364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B71FC5DA-2D81-4879-B1C7-02CED5FD9364}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B71FC5DA-2D81-4879-B1C7-02CED5FD9364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B71FC5DA-2D81-4879-B1C7-02CED5FD9364}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D09BD47C-0139-4F7B-9378-B46CB6CE261F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D09BD47C-0139-4F7B-9378-B46CB6CE261F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D09BD47C-0139-4F7B-9378-B46CB6CE261F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D09BD47C-0139-4F7B-9378-B46CB6CE261F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F324F9AE-170D-435F-8308-BC079A6CCFC5}
+	EndGlobalSection
+EndGlobal

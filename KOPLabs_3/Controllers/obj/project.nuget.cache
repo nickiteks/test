@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "zI95im4EYuYCmmagO0Z97rPOUYNLuO+qJT/N9NRJHk2FwAlFhqgMffkgosIGORiMDVJMzxOSoK4ileaY3PIBMQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\NULS\\Desktop\\KOPLabs_3\\Controllers\\Controllers.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\NULS\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\NULS\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

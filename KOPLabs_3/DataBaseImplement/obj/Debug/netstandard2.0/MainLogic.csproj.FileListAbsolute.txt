@@ -1,0 +1,7 @@
+C:\Users\NULS\source\repos\KOPLabs_3\DataBaseImplement\bin\Debug\netstandard2.0\MainLogic.deps.json
+C:\Users\NULS\source\repos\KOPLabs_3\DataBaseImplement\bin\Debug\netstandard2.0\MainLogic.dll
+C:\Users\NULS\source\repos\KOPLabs_3\DataBaseImplement\bin\Debug\netstandard2.0\MainLogic.pdb
+C:\Users\NULS\source\repos\KOPLabs_3\DataBaseImplement\obj\Debug\netstandard2.0\MainLogic.AssemblyInfoInputs.cache
+C:\Users\NULS\source\repos\KOPLabs_3\DataBaseImplement\obj\Debug\netstandard2.0\MainLogic.AssemblyInfo.cs
+C:\Users\NULS\source\repos\KOPLabs_3\DataBaseImplement\obj\Debug\netstandard2.0\MainLogic.dll
+C:\Users\NULS\source\repos\KOPLabs_3\DataBaseImplement\obj\Debug\netstandard2.0\MainLogic.pdb
