@@ -1,0 +1,9 @@
+C:\Users\NULS\source\repos\KOPlab2\Controls\bin\Debug\netstandard2.0\components.deps.json
+C:\Users\NULS\source\repos\KOPlab2\Controls\bin\Debug\netstandard2.0\components.dll
+C:\Users\NULS\source\repos\KOPlab2\Controls\bin\Debug\netstandard2.0\components.pdb
+C:\Users\NULS\source\repos\KOPlab2\Controls\obj\Debug\netstandard2.0\components.AssemblyInfoInputs.cache
+C:\Users\NULS\source\repos\KOPlab2\Controls\obj\Debug\netstandard2.0\components.AssemblyInfo.cs
+C:\Users\NULS\source\repos\KOPlab2\Controls\obj\Debug\netstandard2.0\components.dll
+C:\Users\NULS\source\repos\KOPlab2\Controls\obj\Debug\netstandard2.0\components.pdb
+C:\Users\NULS\source\repos\KOPlab2\Controls\obj\Debug\netstandard2.0\components.csproj.CoreCompileInputs.cache
+C:\Users\NULS\source\repos\KOPlab2\Controls\obj\Debug\netstandard2.0\components.csprojAssemblyReference.cache
